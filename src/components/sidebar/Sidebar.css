@@ -1,0 +1,22 @@
+.sidebar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  flex-direction: column;
+}
+
+.sidebar__dashboard {
+  border: 3px solid whitesmoke;
+  color: red;
+  box-shadow: 2px 2px 2px 2px #e5e4e2;
+  border-radius: 5px;
+  padding: 3px 5px 3px 5px;
+  font-weight: bold;
+}
+
+.sidebar__icons {
+  display: flex;
+
+  flex-direction: column;
+}
