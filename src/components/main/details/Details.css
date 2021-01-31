@@ -1,0 +1,11 @@
+.details {
+  margin-left: 15px;
+  padding-left: 15px;
+  position: relative;
+  left: 30px;
+}
+
+.details > h5 {
+  padding: 2px;
+  margin: 0 0 6px 6px;
+}
