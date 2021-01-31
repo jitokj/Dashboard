@@ -20,4 +20,15 @@
 .forecast__rectangle > h6 {
   color: white;
   padding-left: 4px;
+  margin-top: 21px;
+}
+
+hr {
+  border: none;
+  border-top: 2px dotted #fff;
+
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 1px;
+  width: 40%;
 }

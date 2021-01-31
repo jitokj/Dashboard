@@ -6,7 +6,9 @@ const Forecast = () => {
       <div className="forecast__data">
         <p>Today</p>
         <div className="forecast__rectangle">
-          <h6> Clear ...................................... 32/19 </h6>
+          <h6> Clear </h6>
+          <hr></hr>
+          <h6> 32/19 </h6>
         </div>
       </div>
     </div>
