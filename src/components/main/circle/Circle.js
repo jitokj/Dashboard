@@ -8,7 +8,7 @@ const Circle = () => {
   return (
     <div className="circle">
       <div className="circle__container">
-        <span className="circle__container--Text">Clear</span>
+        <span className="circle__container--Text">{weather?.condition}</span>
         <span className="circle__container--Temp">
           {weather?.temp}
           <sup>oC</sup>

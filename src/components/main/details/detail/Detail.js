@@ -39,7 +39,10 @@ const Detail = () => {
 
           <div className="detail__text">
             <p>Real Feel</p>
-            <span>27.3kmph</span>
+            <span>
+              {`${weather?.realFeel}`}
+              <sup>oC</sup>
+            </span>
           </div>
         </div>
 
@@ -54,7 +57,7 @@ const Detail = () => {
 
           <div className="detail__text">
             <p>UV Index</p>
-            <span>27.3kmph</span>
+            <span> {`${weather?.uv}`}</span>
           </div>
         </div>
 
@@ -69,7 +72,7 @@ const Detail = () => {
 
           <div className="detail__text">
             <p>Pressure</p>
-            <span>27.3kmph</span>
+            <span> {`${weather?.pressure} mb`}</span>
           </div>
         </div>
       </div>

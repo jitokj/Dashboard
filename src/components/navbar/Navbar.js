@@ -1,11 +1,14 @@
 import React from "react";
 import "./Navbar.css";
+import { useSelector } from "react-redux";
+import { dataWeather } from "../features/weatherSlice";
 
 const Navbar = () => {
+  const weather = useSelector(dataWeather);
   return (
     <div className="navbar">
-      <h3>Chalakudy</h3>
-      <p>Status Updated: 01 Feb 2021 10:48 AM</p>
+      <h3>{weather?.location}</h3>
+      <p>Status Updated: {weather?.time}</p>
     </div>
   );
 };

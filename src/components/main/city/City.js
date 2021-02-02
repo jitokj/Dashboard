@@ -1,17 +1,28 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./City.css";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCloud } from "@fortawesome/free-solid-svg-icons";
+import axios from "../../../api/api";
 
 const City = () => {
+  const [kochi, setKochi] = useState({});
+  useEffect(() => {
+    axios
+      .get(`/current.json?key=8cd3ba8f524c4b1cb8261025212801&q=Kochi`)
+      .then(({ data }) => {
+        setKochi(data);
+      })
+      .catch((err) => console.log(err));
+  }, []);
+
   return (
     <div className="city">
       <Card className="city__card">
         <CardContent>
-          <Typography variant="subtitle2">New York</Typography>
+          <Typography variant="subtitle2">{kochi?.location?.name}</Typography>
         </CardContent>
         <div className="city__card--top">
           <CardContent>
@@ -24,12 +35,13 @@ const City = () => {
           </CardContent>
           <div className="city__card--vert"></div>
           <h1>
-            62<sup>oC</sup>
+            {kochi?.current?.temp_c}
+            <sup>oC</sup>
           </h1>
         </div>
         <div className="city__card--bottom">
           <hr id="horizontal__line" />
-          <p>29</p>
+          <p>{kochi?.current?.feelslike_c}</p>
         </div>
       </Card>
       {/***** */}
