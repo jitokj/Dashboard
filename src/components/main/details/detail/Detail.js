@@ -5,8 +5,11 @@ import { faWind } from "@fortawesome/free-solid-svg-icons";
 import { faThermometerFull } from "@fortawesome/free-solid-svg-icons";
 import { faSun } from "@fortawesome/free-solid-svg-icons";
 import { faTachometerAlt } from "@fortawesome/free-solid-svg-icons";
+import { useSelector } from "react-redux";
+import { dataWeather } from "../../../features/weatherSlice";
 
 const Detail = () => {
+  const weather = useSelector(dataWeather);
   return (
     <div className="detail">
       <div className="detail__icons">
@@ -21,7 +24,7 @@ const Detail = () => {
 
           <div className="detail__text">
             <p>Wind Speed</p>
-            <span>27.3kmph</span>
+            <span>{`${weather?.windSpeed} kmph`}</span>
           </div>
         </div>
 

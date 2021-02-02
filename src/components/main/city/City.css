@@ -8,6 +8,7 @@
 .city__card {
   min-width: 225px;
   margin: 20px 40px 20px 20px;
+  border-top: 3px solid green;
 }
 
 .city__card--vert {
