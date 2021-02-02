@@ -1,6 +1,4 @@
 .city {
-  position: relative;
-  left: 10%;
   padding-left: 20px;
   display: flex;
   flex-direction: row;

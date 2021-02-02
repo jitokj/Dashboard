@@ -45,53 +45,6 @@ const City = () => {
         </div>
       </Card>
       {/***** */}
-      <Card className="city__card">
-        <CardContent>
-          <Typography variant="subtitle2">New York</Typography>
-        </CardContent>
-        <div className="city__card--top">
-          <CardContent>
-            <FontAwesomeIcon
-              icon={faCloud}
-              color="blue"
-              size="lg"
-              className="city__card--Icon"
-            />
-          </CardContent>
-          <div className="city__card--vert"></div>
-          <h1>
-            62<sup>oC</sup>
-          </h1>
-        </div>
-        <div className="city__card--bottom">
-          <hr id="horizontal__line" />
-          <p>29</p>
-        </div>
-      </Card>
-
-      <Card className="city__card">
-        <CardContent>
-          <Typography variant="subtitle2">New York</Typography>
-        </CardContent>
-        <div className="city__card--top">
-          <CardContent>
-            <FontAwesomeIcon
-              icon={faCloud}
-              color="blue"
-              size="lg"
-              className="city__card--Icon"
-            />
-          </CardContent>
-          <div className="city__card--vert"></div>
-          <h1>
-            62<sup>oC</sup>
-          </h1>
-        </div>
-        <div className="city__card--bottom">
-          <hr id="horizontal__line" />
-          <p>29</p>
-        </div>
-      </Card>
     </div>
   );
 };
